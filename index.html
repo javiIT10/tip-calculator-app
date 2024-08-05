@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLESCSS -->
+    <link rel="stylesheet" href="src/css/build-styles.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <!-- TITLE -->
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="text-2xl bg-light-grayish-cyan font-space-mono font-bold">
+    <!-- ================================================================ 
+                              SECTION HEADER
+    ======================================================================-->
+    <header>
+      <h1
+        class="text-center text-dark-grayish-cyan m-auto my-[30px] tracking-[8px] xl:m-[160px_0_90px]"
+      >
+        SPLI <br />
+        TTER
+      </h1>
+    </header>
+
+    <!-- ================================================================ 
+                              SECTION CALCULATOR
+    ======================================================================-->
+
+    <section
+      class="bg-white w-[375px] m-auto rounded-2xl p-8 xl:w-[900px] xl:flex xl:gap-[50px]"
+    >
+      <div class="xl:flex-[1]">
+        <label for="bill" class="block text-grayish-cyan text-[.75em] mb-2"
+          >Bill</label
+        >
+        <input
+          id="bill"
+          class="input bg-[10px_center] bg-no-repeat"
+          style="background-image: url(./src/images/icon-dollar.svg)"
+          type="number"
+          value="0"
+          placeholder="0"
+        />
+
+        <fieldset class="grid grid-cols-2 gap-[15px] mb-[30px] xl:grid-cols-3">
+          <legend class="block text-grayish-cyan text-[.75em] mb-2">
+            Select Tip %
+          </legend>
+          <button class="btn btn-active">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <input
+            id="custom"
+            class="input xl:w-[107px]"
+            type="number"
+            placeholder="Custom"
+          />
+        </fieldset>
+
+        <label for="people" class="block text-grayish-cyan text-[.75em] mb-2"
+          >Number of People
+          <span id="alert" class="text-[#CA8073]"></span>
+        </label>
+        <input
+          id="people"
+          class="input bg-[10px_center] bg-no-repeat"
+          style="background-image: url(./src/images/icon-person.svg)"
+          min="1"
+          type="number"
+          value="1"
+          placeholder="0"
+        />
+      </div>
+
+      <div
+        class="bg-very-dark-cyan rounded-xl px-8 pt-[42px] pb-8 flex flex-col justify-between xl:flex-[1]"
+      >
+        <div class="grid grid-cols-2 gap-[20px] mb-[20px] items-center">
+          <div>
+            <p class="text-[.75em] text-very-light-grayish-cyan">Tip Amount</p>
+            <p class="text-[.65em] text-light-grayish-cyan">/ person</p>
+          </div>
+
+          <p
+            id="resultTipValue"
+            class="text-[1.2em] text-strong-cyan text-end xl:text-[1.7em]"
+          >
+            $0.00
+          </p>
+
+          <div>
+            <p class="text-[.75em] text-very-light-grayish-cyan">Total</p>
+            <p class="text-[.65em] text-light-grayish-cyan">/ person</p>
+          </div>
+
+          <p
+            id="resultTotalValue"
+            class="text-[1.2em] text-strong-cyan text-end xl:text-[1.7em]"
+          >
+            $0.00
+          </p>
+        </div>
+
+        <button
+          id="btnReset"
+          class="bg-strong-cyan h-[50px] uppercase text-very-dark-cyan rounded hover:text-light-grayish-cyan transition"
+        >
+          Reset
+        </button>
+      </div>
+    </section>
+
+    <style>
+      input {
+        -moz-appearance: textfield;
+      }
+    </style>
+
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>

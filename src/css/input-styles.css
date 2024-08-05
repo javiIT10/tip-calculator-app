@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .input {
+    @apply text-end caret-strong-cyan rounded pr-[10px] w-full h-[48px] mb-[30px] bg-very-light-grayish-cyan cursor-pointer focus:outline-none focus:border-[2px] border-strong-cyan text-very-dark-cyan placeholder:text-grayish-cyan;
+  }
+  .btn {
+    @apply w-[147px] h-[50px] bg-very-dark-cyan text-light-grayish-cyan rounded hover:bg-strong-cyan hover:text-very-dark-cyan transition-all  xl:w-[107px];
+  }
+  .btn-active {
+    @apply bg-strong-cyan text-very-dark-cyan;
+  }
+}
