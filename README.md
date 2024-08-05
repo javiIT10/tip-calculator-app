@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/design/screenshot-tip-calculator-app.png)
+![](./src/images/screenshot-tip-calculator-app.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-using-tailwind-css-5p6NeOonRY](https://www.frontendmentor.io/solutions/tip-calculator-app-using-tailwind-css-5p6NeOonRY)
+- Live Site URL: [https://javiit10.github.io/tip-calculator-app/](https://javiit10.github.io/tip-calculator-app/)
 
 ## My process
 
